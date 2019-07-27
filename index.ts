@@ -1,3 +1,25 @@
+
+import * as Discord from 'discord.js';
+import MessageHandler from './src/MessageHandler';
+
+
+const client = new Discord.Client();
+
+
+
+client.on('ready', function() {
+
+
+});
+
+
+const messageHandler = new MessageHandler({ x: 1 });
+
+client.on('message', messageHandler.onMessage);
+
+client.login("NjAzNjU3MTYyNTQzMjAyMzU3.XTyAWA.pCPuFVGCOSzNPzxvQTSZqsWfPBQ");
+
+
 // NjAzNjU3MTYyNTQzMjAyMzU3.XTixjg.APSAZEhKsvA9FC0E_IP1pp59PjI
 // https://discordapp.com/oauth2/authorize?client_id=603657162543202357&scope=bot&permissions=8
 // Admin ^
@@ -35,16 +57,3 @@ client.on("message", msg => {
 });
 
 client.login("NjAzNjU3MTYyNTQzMjAyMzU3.XTixjg.APSAZEhKsvA9FC0E_IP1pp59PjI");*/
-
-import * as Discord from 'discord.js';
-import MessageHandler from './src/MessageHandler';
-const client = new Discord.Client();
-client.on('ready', function() {
-    console.log('Nibba');
-});
-
-const messageHandler = new MessageHandler({ x: 1 });
-
-client.on('message', messageHandler.onMessage);
-
-client.login("NjAzNjU3MTYyNTQzMjAyMzU3.XTnW_Q.LxFBRnR0xy2T-GvaEfggTWn7gHc");
