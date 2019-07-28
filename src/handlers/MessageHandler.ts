@@ -16,10 +16,29 @@ interface IMessageHandlerSettings {
 //     }
 // }
 
-// function binder() {
-//     return function(this: MessageHandler, target: any, propertyKey: string, descriptor: PropertyDescriptor) {
-//         this[propertyKey] = this[propertyKey].bind(this)
 
+function binder<T extends Function>(target: object, propertyKey: string, descriptor: TypedPropertyDescriptor<T>): TypedPropertyDescriptor<T> | void {    
+    return {
+        configurable: true,
+        get(this: T): T {
+            const bound: T = descriptor.value!.bind(this);
+            Object.defineProperty(this, propertyKey, {
+                value: bound,
+                configurable: true,
+                writable: true
+            });
+            return bound;
+        }
+    };
+}
+
+
+// interface Obj<T extends Function> {
+
+// }
+// const obj: Obj<> = {
+//     get(this: T): T {
+        
 //     }
 // }
 
@@ -56,7 +75,7 @@ class MessageHandler implements IMessageHandler {
         this.onMessage = this.onMessage.bind(this)
     }
 
-
+    @binder
     onMessage(msg: Message) {
         const { author, channel } = msg;
         if(author.bot) return null;
