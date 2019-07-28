@@ -1,18 +1,19 @@
 import { MessageHandler } from './handlers'
-import { DiscordAPIError, Client } from 'discord.js';
+import { DiscordAPIError, Client,  } from 'discord.js';
 
 class BotHandler {
  // Handlers
- messageHandler!: MessageHandler
+ messageHandler: MessageHandler = new MessageHandler()
+
 
 
  // -----
+ dbot!: Client
 
-
- 
+ // 
 
  constructor(client: Client) {
-
+  this.dbot = client
  }
 
 }
