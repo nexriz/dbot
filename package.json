@@ -6,7 +6,8 @@
     "dependencies": {
         "discord.js": "^11.5.1",
         "dotenv": "^8.0.0",
-        "pegjs": "^0.10.0"
+        "pegjs": "^0.10.0",
+        "rethinkdb": "^2.3.3"
     },
     "scripts": {
         "start": "nodemon --watch index.ts --watch src --project tsconfig.json --exec ts-node index.ts"
@@ -18,6 +19,7 @@
         "@babel/preset-typescript": "^7.3.3",
         "@types/node": "^12.6.8",
         "@types/pegjs": "^0.10.1",
+        "@types/rethinkdb": "^2.3.14",
         "nodemon": "^1.19.1",
         "ts-node": "^8.3.0",
         "typescript": "^3.5.3"

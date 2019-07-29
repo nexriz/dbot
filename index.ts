@@ -1,7 +1,8 @@
 
 import * as Discord from 'discord.js';
-import MessageHandler from './src/MessageHandler';
-
+import MessageHandler from './src/handlers/MessageHandler';
+import "./config"
+import Dbot from './src'
 
 const client = new Discord.Client();
 

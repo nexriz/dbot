@@ -1,0 +1,24 @@
+2019-07-29T19:37:01.203866000 0.176934s notice: Recursively removing directory /Users/viktorlott/projects/js/discord/rethinkdb_data/tmp
+2019-07-29T19:37:01.205596000 0.178665s notice: Initializing directory /Users/viktorlott/projects/js/discord/rethinkdb_data
+2019-07-29T19:37:01.206290000 0.179356s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/viktorlott/projects/js/discord/rethinkdb_data' did not already exist or is empty.)
+2019-07-29T19:37:01.206879000 0.179944s notice: Running rethinkdb 2.3.6 (CLANG 10.0.0 (clang-1000.10.43.1))...
+2019-07-29T19:37:01.212007000 0.185072s notice: Running on Darwin 18.5.0 x86_64
+2019-07-29T19:37:01.212090000 0.185154s notice: Loading data from directory /Users/viktorlott/projects/js/discord/rethinkdb_data
+2019-07-29T19:37:01.269850000 0.242914s info: Automatically using cache size of 1220 MB
+2019-07-29T19:37:01.271825000 0.244887s notice: Listening for intracluster connections on port 29015
+2019-07-29T19:37:01.273479000 0.246542s notice: Listening for client driver connections on port 28015
+2019-07-29T19:37:01.273593000 0.246656s notice: Listening for administrative HTTP connections on port 8080
+2019-07-29T19:37:01.273597000 0.246659s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2019-07-29T19:37:01.273605000 0.246668s notice: Listening on driver addresses: 127.0.0.1, ::1
+2019-07-29T19:37:01.273607000 0.246670s notice: Listening on http addresses: 127.0.0.1, ::1
+2019-07-29T19:37:01.273613000 0.246676s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2019-07-29T19:37:01.273619000 0.246682s notice: Server ready, "Viktors_MacBook_Pro_local_sdu" def189be-523c-418f-9f97-d923630d6b34
+2019-07-29T19:37:05.545926000 4.518922s notice: Someone asked for the nonwhitelisted file "/socket.io/".  If this should be accessible, add it to the static web assets.
+2019-07-29T19:37:12.549971000 11.522859s notice: Someone asked for the nonwhitelisted file "/socket.io/".  If this should be accessible, add it to the static web assets.
+2019-07-29T19:37:19.552946000 18.525724s notice: Someone asked for the nonwhitelisted file "/socket.io/".  If this should be accessible, add it to the static web assets.
+2019-07-29T19:37:26.558637000 25.531306s notice: Someone asked for the nonwhitelisted file "/socket.io/".  If this should be accessible, add it to the static web assets.
+2019-07-29T19:37:31.719554000 30.692142s notice: Server got SIGINT from pid 16858, uid 501; shutting down...
+2019-07-29T19:37:31.719661000 30.692249s notice: Shutting down client connections...
+2019-07-29T19:37:31.719758000 30.692345s notice: All client connections closed.
+2019-07-29T19:37:31.719766000 30.692353s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2019-07-29T19:37:31.720084000 30.692671s notice: Storage engine shut down.
